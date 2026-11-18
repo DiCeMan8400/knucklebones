@@ -42,4 +42,4 @@ const server = http.createServer(async (req, res) => {
   json(res,405,{error:'Method not allowed'});
 });
 if (require.main === module) server.listen(process.env.PORT || 3000, '0.0.0.0',()=>console.log(`Listening on port ${process.env.PORT || 3000}`));
-module.exports = { server, score };
+module.exports = { server, score, rooms };
